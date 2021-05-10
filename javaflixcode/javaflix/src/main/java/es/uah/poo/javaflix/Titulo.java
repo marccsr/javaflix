@@ -8,6 +8,7 @@ public class Titulo {
     private String genero;
     private int año;
     private ArrayList<Actor> actoresr;
+    //añadir imagen de portada
 
     public Titulo(ArrayList<Actor> actoresr) {
         actoresr= new ArrayList<>();
