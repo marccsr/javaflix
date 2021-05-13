@@ -6,13 +6,13 @@ public class Titulo {
     private String titulo;
     private String sinopsis;
     private String genero;
-    private int año;
+    private int anno;
     private ArrayList<Actor> actoresr;
     //añadir imagen de portada
 
     public Titulo(ArrayList<Actor> actoresr) {
         actoresr= new ArrayList<>();
-        this.año= año;
+        this.anno= anno;
         this.sinopsis=sinopsis;
         this.genero=genero;
         this.titulo=titulo;
@@ -44,12 +44,12 @@ public class Titulo {
         this.genero = genero;
     }
 
-    public int getAño() {
-        return año;
+    public int getAnno() {
+        return anno;
     }
 
-    public void setAño(int año) {
-        this.año = año;
+    public void setAnno(int anno) {
+        this.anno = anno;
     }
     
     public ArrayList<Actor> getActoresr() {

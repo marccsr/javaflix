@@ -1,19 +1,18 @@
 package es.uah.poo.javaflix;
 
+import java.util.ArrayList;
+
 public class Serie extends Titulo {
     
     private int temporadas;
     private int capitulos;
-
-    public Serie(int temporadas, int capitulos) {
+    
+    public Serie(int temporadas, int capitulos, String titulo, String anno, String sinopsis, String genero, int anno, ArrayList<Actor> actoresr) {
         this.temporadas = temporadas;
         this.capitulos = capitulos;
+        super(titulo, sinopsis, anno, actoresr, genero);
     }
     
-    public Serie(Titulo serie){
-        super(serie.getTitulo(), serie.setTitulo(String titulo), serie.getSinopsis(), serie.setSinopsis(String sinopsis), serie.getGenero(), serie.setGenero(genero), serie.getAño(), serie.setAño(capitulos), serie.getActoresr());
-    
-    }
     
     public int getTemporadas() {
         return temporadas;
