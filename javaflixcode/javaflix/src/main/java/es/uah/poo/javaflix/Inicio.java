@@ -14,12 +14,12 @@ import javax.swing.JOptionPane;
  *
  * @author MARCOSTUF
  */
-public class Login extends javax.swing.JFrame {
+public class Inicio extends javax.swing.JFrame {
 
     /**
      * Creates new form Login
      */
-    public Login() {
+    public Inicio() {
         initComponents();
     }
 
@@ -37,6 +37,7 @@ public class Login extends javax.swing.JFrame {
         passfield = new javax.swing.JPasswordField();
         loginboton = new javax.swing.JButton();
         javaflixtit = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -53,6 +54,13 @@ public class Login extends javax.swing.JFrame {
 
         javaflixtit.setText("BIENVENIDO A JAVAFLIX");
 
+        jButton1.setText("REGISTRO");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -62,11 +70,14 @@ public class Login extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(103, 103, 103)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(pass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(pass, javax.swing.GroupLayout.DEFAULT_SIZE, 336, Short.MAX_VALUE)
                             .addComponent(userfield)
                             .addComponent(user, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(loginboton, javax.swing.GroupLayout.DEFAULT_SIZE, 336, Short.MAX_VALUE)
-                            .addComponent(passfield)))
+                            .addComponent(passfield)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(loginboton, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(211, 211, 211)
                         .addComponent(javaflixtit)))
@@ -86,7 +97,9 @@ public class Login extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(passfield, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(39, 39, 39)
-                .addComponent(loginboton)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(loginboton)
+                    .addComponent(jButton1))
                 .addGap(33, 33, 33))
         );
 
@@ -94,26 +107,14 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginbotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginbotonActionPerformed
-        char contrasena[]=passfield.getPassword();
         
-        String contrasenadef=new String(contrasena);
-        
-        if (userfield.getText().equals(FileReader f (datos/datos.txt)) && passfield.equals(FileReader f (datos/passwords.txt))){
-        
-    
-            this.dispose();
-            JOptionPane.showMessageDialog(null, "Bienvenido\n Has ingresado "+ "satisfactoriamente a JavaFlix.", "Mensaje de bienvenida", JOptionPane.INFORMATION_MESSAGE);
-        
-            Formulario1 formformulario1= new Formulario1();
-        
-            formformulario1.setVisible(true);
-        
-            else {
-                JOptionPane.showMessageDialog(null, "Acceso denegado.\n"+"Por favor, ingrese un usuario y/o contraseña correctos.",
-                JOptionPane.ERROR_MESSAGE);
-            }
-        }
     }//GEN-LAST:event_loginbotonActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
+        Registro r1= new Registro();
+        r1.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
         
             
     /**
@@ -133,25 +134,27 @@ public class Login extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Login().setVisible(true);
+                new Inicio().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel javaflixtit;
     private javax.swing.JButton loginboton;
     private javax.swing.JLabel pass;
