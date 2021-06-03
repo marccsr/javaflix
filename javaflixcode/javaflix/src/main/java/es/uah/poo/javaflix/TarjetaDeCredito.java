@@ -11,4 +11,17 @@ package es.uah.poo.javaflix;
  */
 public class TarjetaDeCredito {
     
+    private String NumTarjeta;
+    private String FechaTarjeta;
+    private String Saldo;
+    
+    public void getTarjeta(String par){
+        return getTarjeta(NumTarjeta+FechaTarjeta+Saldo);
+    }
+    
+    
+    }
+    
+    
+    
 }

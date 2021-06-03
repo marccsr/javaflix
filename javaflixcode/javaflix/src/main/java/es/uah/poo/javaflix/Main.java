@@ -7,9 +7,12 @@ package es.uah.poo.javaflix;
 
 /**
  *
- * @author MARCOSTUF
+ * @author MARCOSPC
  */
-public class Capitulo {
-
+public class Main {
+    
+    public static void main(String[] args){
+        
+    }
     
 }
