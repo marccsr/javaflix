@@ -19,7 +19,7 @@ import javax.swing.ImageIcon;
 public class MenuAdmin extends javax.swing.JFrame {
 
     /**
-     * Creates new form MenuAdmin
+     * Crea una nueva ventana MenuAdmin
      */
     public MenuAdmin() {
         initComponents();
@@ -124,7 +124,7 @@ public class MenuAdmin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     /**
-     * Lanza el menu de control de usuarios y cierra el actual
+     * Abre el menú de control de los usuarios y cierra el actual.
      * @param evt 
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -134,7 +134,7 @@ public class MenuAdmin extends javax.swing.JFrame {
         controlUsuarios.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
     /**
-     * Lanza el menu de control de contenido y cierra el actual
+     * Abre el menú del control de contenidos y cierra el actual.
      * @param evt 
      */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

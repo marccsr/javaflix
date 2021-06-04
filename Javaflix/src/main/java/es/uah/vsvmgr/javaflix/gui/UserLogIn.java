@@ -137,7 +137,8 @@ public class UserLogIn extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     /**
-     * Comprueba que la contraseña introducida coincida con la registrada en el archivo txt con el dni introducido, de ser así lanzara el menu de usuario, por lo contrario mostrara un mensaje de error.
+     * Contrasta si la contraseña introducida coincide con la del registro.
+     * Si es así, lanzará la aplicación para el usuario. Si no, lanzará un mensaje de error.
      * @param evt 
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -156,12 +157,12 @@ public class UserLogIn extends javax.swing.JFrame {
             this.dispose();
         }
         else {
-        jLabel1.setText("|Contraseña Incorrecta|");
+        jLabel1.setText("La contraseña no es correcta.");
         }
         br.close();
         }
         catch(IOException ioe){
-            jLabel1.setText("|DNI Incorrecto|");
+            jLabel1.setText("El DNI no es correcto.");
             System.out.println(ioe);
         }
     }//GEN-LAST:event_jButton1ActionPerformed

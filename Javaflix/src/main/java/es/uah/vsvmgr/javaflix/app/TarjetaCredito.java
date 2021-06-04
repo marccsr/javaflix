@@ -11,6 +11,7 @@ package es.uah.vsvmgr.javaflix.app;
  * @author marcostuf
  */
 public class TarjetaCredito {
+    
     private String numero;
     private int fecha;
     private double saldo;

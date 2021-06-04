@@ -22,7 +22,7 @@ import javax.swing.ImageIcon;
 public class MenuUsuario extends javax.swing.JFrame {
 
     /**
-     * Creates new form MenuUsuario
+     * Abre la ventana MenuUsuario.
      */
     public MenuUsuario() {
         initComponents();
@@ -42,7 +42,9 @@ public class MenuUsuario extends javax.swing.JFrame {
     String dni = null;
 
     /**
-     *Permite indicar el dni del usuario, comprueba si el usuario está subscrito y, de ser así, mustra el botón para ver contenido, por lo contrario mostrará el botón para subscribirse y pedirá al usuario que se subscriba.
+     * Por medio del DNI, comprueba si el usuario está al corriente de pago.
+     * Si es así, lanza el menú para ver los contenidos.
+     * Si el usuario no está suscrito, se lo indicará y lanzará el menú para que se suscriba.
      * @param dni
      */
     public void setDni(String dni){
@@ -167,7 +169,7 @@ public class MenuUsuario extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     /**
-     * Lanza el menu de subscripción y cierra el actual
+     * Abre la ventana para suscribirse, y cierra la anterior.
      * @param evt 
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -178,7 +180,7 @@ public class MenuUsuario extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
     /**
-     * Lanza el menu de contenido de usuario y cierra el actual
+     * Lanza la aplicación de contenidos para el usuario y cierra la anterior.
      * @param evt 
      */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

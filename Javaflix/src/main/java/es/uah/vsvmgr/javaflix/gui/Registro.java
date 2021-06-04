@@ -358,25 +358,25 @@ public class Registro extends javax.swing.JFrame {
         }
         //MENSAJE DE ERROR
         if (dniCorrecto==false) {
-        jLabel2.setText("|DNI INVALIDO|");
+        jLabel2.setText("El DNI no es válido.");
         }
         if (nombreCorrecto==false) {
-        jLabel2.setText(jLabel2.getText()+" |NOMBRE INVALIDO|");
+        jLabel2.setText(jLabel2.getText()+"El nombre no es válido.");
         }
         if (correoCorrecto==false) {
-        jLabel2.setText(jLabel2.getText()+" |CORREO INVALIDO|");
+        jLabel2.setText(jLabel2.getText()+"El correo no tiene el formato correcto.");
         }
         if (numTarjetaCorrecto==false) {
-        jLabel2.setText(jLabel2.getText()+" |TARJETA INVALIDA|");
+        jLabel2.setText(jLabel2.getText()+"La tarjeta no es válida.");
         }
         if (fechaCorrecta==false) {
-        jLabel2.setText(jLabel2.getText()+" |FECHA INVALIDA|");
+        jLabel2.setText(jLabel2.getText()+"El formato de fecha no es correcto.");
         }
         if (saldoCorrecto==false) {
-        jLabel2.setText(jLabel2.getText()+" |SALDO INVALIDO|");
+        jLabel2.setText(jLabel2.getText()+"El formato del saldo no es correcto.");
         } 
         
-        //ALMACENAMIENTO DE DATOS Y LANZADOR DE CLASE Suscripcion 
+        //Almacena los datos del usuario y lanza la clase suscripción, para pagarla y empezar a usar JavaFlix.
         if (dniCorrecto && nombreCorrecto && correoCorrecto && numTarjetaCorrecto && fechaCorrecta && saldoCorrecto && claveCorrecta) {
         TarjetaCredito tarjeta = new TarjetaCredito(jTextField4.getText(), Integer.parseInt(jTextField5.getText()), Double.parseDouble(jTextField6.getText()));
         Usuario usuario = new Usuario(jTextField1.getText(), jTextField2.getText(), jTextField3.getText(), pass, tarjeta, false);

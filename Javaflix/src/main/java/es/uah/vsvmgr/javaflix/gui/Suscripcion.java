@@ -30,7 +30,7 @@ public class Suscripcion extends javax.swing.JFrame {
     
 
     /**
-     * Creates new form Subscripcion
+     * Creates new form Suscripcion
      */
     public Suscripcion() {
         initComponents();
@@ -177,7 +177,7 @@ public class Suscripcion extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     /**
-     * Elige el tipo de subscripción y muestra el precio de esta en un jlabel
+     * Muestra una lista con todas las suscricpiones y muestra su precio al lado.
      * @param evt 
      */
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
@@ -194,14 +194,16 @@ public class Suscripcion extends javax.swing.JFrame {
     String dni = null;
 
     /**
-     *Permite indicar el dni de un usuario para usarlo durante la ejecución de la clase
+     *Indica el DNI del usuario
      * @param dni String
      */
     public void setDni(String dni){
     this.dni=dni;
     }
     /**
-     * Comprueba si el usuario ya está registrado, si tiene suficiente saldo y si la tarjeta está caducada. Si todo resulta correcto actualiza los datos del txt del usuario con el precio de la subscripcion sustraido del saldo disponible y genera una factura con el dni del usuario que contiene sus datos y los datos de la subscripción.
+     * Comprueba si el usuario ya está registrado, si tiene suficiente saldo y si la tarjeta está caducada. 
+     * Sobreescribe en el registro del usuario el precio de la suscripcion pagada del saldo disponible y genera una documento con el DNI del usuario que contiene sus 
+     * datos y los datos de la subscripción, a modo de comprobante.
      * @param evt 
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -242,14 +244,14 @@ public class Suscripcion extends javax.swing.JFrame {
                 
             } catch (IOException ioe) {
               System.out.println("Error IO: "+ioe.toString());}
-        }else{jLabel4.setText("Tarjeta caducada");}
-        }else {jLabel4.setText("Tarjeta caducada");}
-        }else { jLabel4.setText("Fondos insuficientes");}
-        }else {jLabel4.setText("Usuario ya registrado");}
+        }else{jLabel4.setText("Tarjeta vencida.");}
+        }else {jLabel4.setText("Tarjeta vencida.");}
+        }else { jLabel4.setText("No existen fondos suficientes.");}
+        }else {jLabel4.setText("El usuario ya existe.");}
     }catch(IOException ioe){}
     }//GEN-LAST:event_jButton1ActionPerformed
     /**
-     * Lanza el registro de usuario y cierra la clase actual
+     * Abre el registro del usuario.
      * @param evt 
      */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
