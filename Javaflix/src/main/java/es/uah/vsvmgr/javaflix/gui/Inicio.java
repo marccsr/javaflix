@@ -57,7 +57,7 @@ public class Inicio extends javax.swing.JFrame {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(220, 4, 5));
+        jPanel1.setBackground(new java.awt.Color(20, 20, 20));
         jPanel1.setForeground(new java.awt.Color(220, 4, 5));
         jPanel1.setMaximumSize(new java.awt.Dimension(950, 650));
         jPanel1.setMinimumSize(new java.awt.Dimension(950, 650));

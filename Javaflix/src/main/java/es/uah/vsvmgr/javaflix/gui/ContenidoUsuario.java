@@ -155,7 +155,7 @@ public class ContenidoUsuario extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(950, 650));
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(220, 4, 5));
+        jPanel1.setBackground(new java.awt.Color(20, 20, 20));
         jPanel1.setMaximumSize(new java.awt.Dimension(950, 650));
         jPanel1.setMinimumSize(new java.awt.Dimension(950, 650));
         jPanel1.setPreferredSize(new java.awt.Dimension(950, 650));
@@ -291,7 +291,7 @@ public class ContenidoUsuario extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(103, Short.MAX_VALUE))
+                .addContainerGap(104, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

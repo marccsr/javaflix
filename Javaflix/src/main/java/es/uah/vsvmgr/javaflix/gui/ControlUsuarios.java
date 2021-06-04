@@ -74,7 +74,7 @@ public class ControlUsuarios extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(950, 650));
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(220, 4, 5));
+        jPanel1.setBackground(new java.awt.Color(20, 20, 20));
         jPanel1.setMaximumSize(new java.awt.Dimension(950, 650));
         jPanel1.setMinimumSize(new java.awt.Dimension(950, 650));
         jPanel1.setPreferredSize(new java.awt.Dimension(950, 650));
