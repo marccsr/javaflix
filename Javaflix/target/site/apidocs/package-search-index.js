@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"es.uah.vsvmgr.javaflix.app"},{"l":"es.uah.vsvmgr.javaflix.gui"}];updateSearchResults();
